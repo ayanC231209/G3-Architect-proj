@@ -166,12 +166,122 @@ max-width: 50%;
 text-align-last: left;
 }
 
+/* --------------------------------------------- */
+
+              /* CARDS SECTION */
+
+.experience{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 130px;
+    gap: 140px;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+.exp-h{
+    color: var(--Dark-01, #131313);
+font-family: "Work Sans";
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+max-width: 60%;
 
 
+}
 
+.exp-p{
+    color: var(--Dark-03, #727272);
+font-family: "Work Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+margin-top: 20px;
+margin-bottom: 30px;
+max-width: 70%;
+}
 
+.cards h3{
+    color: var(--Dark-01, #131313);
+font-family: "Work Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.cards{
+    width: 586px;
+height: 171px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+padding-left: 30px;
+padding-top: 30px;
+margin-bottom: 20px;
+}
 
+.exp-cnt img{
+    width: 708px;
+height: 982px;
+flex-shrink: 0;
+z-index: 0;
+}
 
+.exp{
+    width: 342px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 8px;
+background: #FF900E;
+color: white;
+text-align: center;
+font-size: 60px;
+font-weight: 700;
+margin-top: -120px;
+margin-left: -88px;
+position: absolute;
+z-index: 1;
+padding-top: 40px;
+
+}
+.feature-grid{
+    display: flex;
+    gap:21px
+}
+.vl{
+    
+    width: 5px;
+    height: 106px;
+    flex-shrink: 0;
+    border:2px solid #FF900E;
+    background:#FF900E;
+    
+}
+.facts{
+        margin-top: 168px;
+        margin-left: 240px;
+}
+
+.facts h3{
+    color: var(--Dark-01, #131313);
+
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.facts p{
+    color: var(--Dark-03, #727272);
+max-width: 40%;
+font-size: 16px;
+font-style: normal;
+padding-top: 24px;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
 
 
 
@@ -210,4 +320,64 @@ text-align-last: left;
         display: block;
         margin: 0px auto;
       }
+      .experience{
+        margin-left: 0px;
+        grid-template-columns: 1fr;
+      }
+      .exp-h{
+        margin: 0px auto    ;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .exp-p{
+        margin: 0px auto    ;
+        max-width: 50%;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .cards h3{
+      max-width: 50%;
+      text-align: center;
+      margin: 0px auto;
+      padding-bottom: 20px;
+      }
+      .cards p{
+        max-width: 50%;
+        text-align: center;
+        margin: 0px auto;
+      }
+      .exp-cnt img{
+        width: 100%;
+      }
+      .vl{
+        display: none;
+      }
+      .exp{
+        display: none;
+        
+         }
+         .exp-cnt img{
+            width: 100%;
+         }
+
+
+         .facts{
+            margin: 0px;
+            margin-top: 20px;
+        }
+        .facts h3{
+            max-width: 45%;
+            margin: 0px auto;
+        }
+        .facts p{
+           text-align: center;
+            margin: 0px auto;
+        }
+
+
+       
+      .exp-cnt:nth-child(1){order:2 } ;
+
+ 
+    
 }
