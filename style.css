@@ -284,10 +284,66 @@ line-height: 26px; /* 162.5% */
 }
 
 
+/* ACHIEVEMENT SECTION  */
+
+.achievement{
+    margin-top: 100px;
+    margin-left: 290px;
+    margin-right: 290px;
+    margin-bottom: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 124px;
+}
+
+.a-grid{
+
+border: 1px solid #FF900E   ;
+min-width: 241px;
+height: 241px;
+
+
+}
+.a-grid-c{
+   margin-top: 46px;
+   margin-left: 36px;
+   margin-right: 36px;
+}
+.a-grid img{
+   
+    display: block;
+    margin: 0px auto;
+    padding-bottom: 10px;
+}
+
+.a-grid h3{
+    color: var(--Dark-02, #424242);
+font-family: "Work Sans";
+font-size: 45px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+max-width: fit-content;
+margin: 0px auto;
+
+}
+.a-grid h1{
+    color: var(--Dark-03, #727272);
+font-family: "Work Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+text-align: center;
+}
 
 
 /* RESPONSIVE SECTION  */
 @media  screen and (max-width:576px) {
+   header{
+    background:white;
+   }
     nav{
         flex-direction:column;
         text-align: center;
@@ -335,6 +391,10 @@ line-height: 26px; /* 162.5% */
         text-align: center;
         padding-bottom: 20px;
       }
+      .cards{
+        width: 576px;
+        padding-left: 0px;
+      }
       .cards h3{
       max-width: 50%;
       text-align: center;
@@ -346,9 +406,7 @@ line-height: 26px; /* 162.5% */
         text-align: center;
         margin: 0px auto;
       }
-      .exp-cnt img{
-        width: 100%;
-      }
+      
       .vl{
         display: none;
       }
@@ -366,14 +424,22 @@ line-height: 26px; /* 162.5% */
             margin-top: 20px;
         }
         .facts h3{
-            max-width: 45%;
-            margin: 0px auto;
+            text-align: center;
         }
         .facts p{
            text-align: center;
             margin: 0px auto;
         }
 
+        .achievement{
+            margin: 0px;
+            margin-top: 100px;
+            grid-template-columns: 1fr;
+        }
+        .a-grid{
+          
+            margin: 0px auto;
+        }
 
        
       .exp-cnt:nth-child(1){order:2 } ;
