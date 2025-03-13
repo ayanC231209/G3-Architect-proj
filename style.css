@@ -374,6 +374,33 @@ text-align: center;
 .spon-img img{
 filter: grayscale(100%);
 }
+/* -------------------- */
+
+/* footer section  */
+
+footer{
+    margin-top: 134px;
+    margin-right: 240px;
+    margin-left: 240px;
+    margin-bottom: 218px;
+}
+
+.last{
+    height: 100px;
+    background-color: #FFF4E7;
+
+}
+.last p{
+    color: var(--Dark-02, #424242);
+text-align: center;
+font-family: "Work Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-top: 39px;
+}
+
 
 /* RESPONSIVE SECTION  */
 @media  screen and (max-width:576px) {
@@ -488,6 +515,21 @@ filter: grayscale(100%);
         }
         .spon-img img{
             display: block;
+            margin: 0px auto;
+        }
+
+        footer{
+            margin: 0px;
+            margin-top:134px;
+            margin-bottom: 218px;
+
+        }
+        .last{
+            background-color: #FFF;
+        }
+        .last p{
+            text-align: center;
+            max-width: 50%;
             margin: 0px auto;
         }
 
